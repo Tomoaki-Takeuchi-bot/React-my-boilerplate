@@ -1,44 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TypeScript - React - TSX 練習用のレポジトリです。
 
-## Available Scripts
+## レポジトリ環境構築手順について
 
-In the project directory, you can run:
+下記サイトを参考に環境構築を実施しております。
+[Type Script Deep Dive 日本語版](https://typescript-jp.gitbook.io/deep-dive/browser#2-create-react-appwosuru)
+
+```
+npm i -g create-react-app
+npx create-react-app my-app --template typescript
+cd my-app
+npm start # または、yarn start
+```
+
+## 環境構築後は下記コマンドが使用可能です。
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+アプリをブラウザでリアルタイム稼働させ確認できます。<br />
+クロームでアクセスしてください。 [http://localhost:3000](http://localhost:3000)
+編集される度に更新されます。
+またコンソールにエラー出力されます。
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**注意事項:このレポジトリには`src/App.test.tsx`を含みません。Jest テスト想定される場合はご注意ください。**
+インタラクティブウォッチモードでテストを稼働させます。
+下記サイトを参照して下さい。
+[running tests](https://facebook.github.io/create-react-app/docs/running-tests)
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+本番用のアプリを `build` フォルダに作成します。最適化によりデプロイの準備を行うものです。
+下記サイトを参照して下さい。
+[deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**注意事項: このコマンド`eject`は一度行うと取り消しできません。**
+このコマンドによりビルドされたツールや選択された設定を削除します。
+CRA の管轄から離れる事を意味します。
+Webpack の設定をカスタマイズする場合等に有効です。
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## CRA , React, TSX についての参考サイト
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create React App について [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React について [React documentation](https://reactjs.org/).
+TSX コマンド入力、トラブルシュートについて [React TypeScript Cheetsheet](https://react-typescript-cheatsheet.netlify.app/)
